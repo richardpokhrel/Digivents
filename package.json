@@ -3,14 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@heroicons/react": "^2.2.0",
+    "@supabase/supabase-js": "^2.50.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "heroicons": "^2.2.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-scripts": "5.0.1",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^7.6.0",
+    "react-scripts": "^5.0.1",
+    "supabase": "^2.24.3",
+    "swiper": "^11.2.8",
     "web-vitals": "^2.1.4"
+    
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
   }
 }
