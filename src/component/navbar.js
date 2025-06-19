@@ -15,7 +15,8 @@ export default function Navbar() {
     { name: 'About', path: '/about' },
     { name: 'Blog', path: '/blog' },
     { name: 'Portfolio', path: '/portfolio' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'Contact', path: '/contact' },
+    { name: 'Events', path: '/events' }
    
   ];
 
@@ -42,7 +43,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Toggle */}
-          <div className="md:hidden">
+          <div className="md:hidden ">
             <button
               type="button"
               className="text-gray-400 hover:text-pink-500 inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pink-500 transition-colors duration-200"
@@ -62,14 +63,14 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         <div
-          className={`md:hidden transition-all duration-300 ease-in-out ${
+          className={`md:hidden transition-all duration-300 ease-in-out  ${
             isMobileMenuOpen
-              ? 'max-h-64 opacity-100'
-              : 'max-h-0 opacity-0 overflow-hidden'
+              ? 'max-h-96 opacity-100'
+              : 'max-h-0 opacity-100 overflow-hidden'
           }`}
           id="mobile-menu"
         >
-          <div className="px-2 pt-2 pb-4 space-y-2 rounded-lg mt-2 bg-[#510a3d]/80 backdrop-blur-sm">
+          <div className=" pt-2 pb-4 space-y-2 rounded-lg mt-2 bg-[#510a3d]/80 backdrop-blur-sm">
             {navigationItems.map((item) => (
               <Link
                 key={item.name}

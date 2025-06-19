@@ -58,8 +58,8 @@ const TestimonialsSection = () => {
         <div className="mt-8">
           <Swiper
             modules={[Pagination, Autoplay]}
-            spaceBetween={24}
-            slidesPerView={3}
+            spaceBetween={20}
+            slidesPerView={1}
             pagination={{
               clickable: true,
               el: ".swiper-pagination",
@@ -69,7 +69,7 @@ const TestimonialsSection = () => {
             loop={true}
             breakpoints={{
               640: { slidesPerView: 1.5, centeredSlides: true },
-              1024: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
               1280: { slidesPerView: 3 },
             }}
             className="testi-slider"

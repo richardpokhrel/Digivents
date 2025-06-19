@@ -10,6 +10,7 @@ import BlogPage from './Pages/BlogPage';
 import BlogArticlePage from './component/blogArticle';
 import ProjectDetail from './component/p-details';
 import ContactUs from './Pages/contact'
+import EventPage from './Pages/Events';
 
 
 
@@ -55,6 +56,7 @@ export default function App() {
           <Route path="/project/:id" element={<ProjectDetail />} />
           <Route path="/blog" element={<BlogPage />}  />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/events" element={<EventPage/>} />
           
 
           <Route path="/blog/:id" element={<BlogArticlePage />} />

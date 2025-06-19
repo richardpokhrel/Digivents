@@ -51,8 +51,8 @@ const ServicesSection = () => {
         <div className="mt-8">
           <Swiper
             modules={[Pagination, Autoplay]}
-            spaceBetween={30}
-            slidesPerView={4}
+            spaceBetween={20}
+            slidesPerView={1}
             pagination={{
               clickable: true,
               el: ".swiper-pagination",
@@ -61,6 +61,7 @@ const ServicesSection = () => {
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             loop={true}
             breakpoints={{
+              380: {slidesOerView: 1.1},
               640: { slidesPerView: 2 },
               1024: { slidesPerView: 4 },
             }}
